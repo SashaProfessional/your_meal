@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Meal</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="/img/your-meal-header.svg" />
+        <img src="/img/kitchen-header.svg" />
+      </div>
+      <div class="not-logo">
+        <img src="/img/picburger.svg" alt="" />
+        <div class="info">
+          <div class="creed">
+            <div>Только самые</div>
+            <div>сочные бургеры!</div>
+          </div>
+          <div class="discount">Бесплатная доставка от 599₴</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="categories">
+        <span><img src="/img/burger.svg" /> Бургеры</span>
+        <span><img src="/img/snacks.svg" /> Закуски</span>
+        <span><img src="/img/hot-dog.svg" /> Хот-доги</span>
+        <span><img src="/img/combo.svg" /> Комбо</span>
+        <span><img src="/img/doner.svg" /> Шаурма</span>
+        <span><img src="/img/pizza.svg" /> Пицца</span>
+        <span><img src="/img/doner.svg" /> Шаурма</span>
+        <span><img src="/img/wok.svg" /> Вок</span>
+        <span><img src="/img/donut.svg" /> Десерты</span>
+        <span><img src="/img/sauces.svg" /> Соусы</span>
+      </div>
+
+      <!-- maybe use заголовок -->
+      <div class="main-section">
+        <div class="cart">
+          <div class="top-section">
+            <span class="title">Корзина</span>
+            <span class="quantity">4</span>
+          </div>
+          <div class="items-section">
+            <div class="item">
+              <image src="/img/burger-examples/burger-example-2-compressed.jpg" />
+              <div class="description">
+                <div class="name">Супер сырный</div>
+                <div class="weight">512г</div>
+                <div class="price">550₴</div>
+              </div>
+              <div class="counter">
+                <span class="control">-</span>
+                <span class="quantity">1</span>
+                <span class="control">+</span>
+              </div>
+            </div>
+            <div class="item">
+              <image src="/img/fries-compressed.jpg" />
+              <div class="description">
+                <div class="name">Картошка фри</div>
+                <div class="weight">180г</div>
+                <div class="price">245₴</div>
+              </div>
+              <div class="counter">
+                <span class="control">-</span>
+                <span class="quantity">2</span>
+                <span class="control">+</span>
+              </div>
+            </div>
+            <div class="item">
+              <image src="/img/hot-dog-cart-compressed.jpg" />
+              <div class="description">
+                <div class="name">Жгучий хот-дог</div>
+                <div class="weight">245г</div>
+                <div class="price">239₴</div>
+              </div>
+              <div class="counter">
+                <span class="control">-</span>
+                <span class="quantity">1</span>
+                <span class="control">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="summary-section">
+            <span>Итого</span>
+            <span>1279₴</span>
+          </div>
+
+          <button class="make-order">Оформить заказ</button>
+
+          <div class="free-delivery-section">
+            <img src="/img/delivery.svg" />
+            Бесплатная доставка
+          </div>
+        </div>
+
+        <div class="not-cart">
+          <div class="active-category-title">Бургеры</div>
+          <div class="food-cards">
+            <div class="food-card">
+              <img src="/img/burger-examples/burger-example-1-compressed.jpg" alt="" />
+              <div class="price">689₴</div>
+              <div class="description">Мясная бомба</div>
+              <div class="weight">520г</div>
+              <button>Добавить</button>
+            </div>
+            <div class="food-card">
+              <img src="/img/burger-examples/burger-example-2-compressed.jpg" alt="" />
+              <div class="price">550₴</div>
+              <div class="description">Супер сырный</div>
+              <div class="weight">512г</div>
+              <button>Добавить</button>
+            </div>
+            <div class="food-card">
+              <img src="/img/burger-examples/burger-example-3-compressed.jpg" alt="" />
+              <div class="price">639₴</div>
+              <div class="description">Сытный</div>
+              <div class="weight">580г</div>
+              <button>Добавить</button>
+            </div>
+            <div class="food-card">
+              <img src="/img/burger-examples/burger-example-4-compressed.jpg" alt="" />
+              <div class="price">480₴</div>
+              <div class="description">Тяжелый удар</div>
+              <div class="weight">470г</div>
+              <button>Добавить</button>
+            </div>
+            <div class="food-card">
+              <img src="/img/burger-examples/burger-example-5-compressed.jpg" alt="" />
+              <div class="price">450₴</div>
+              <div class="description">Вечная классика</div>
+              <div class="weight">450г</div>
+              <button>Добавить</button>
+            </div>
+            <div class="food-card">
+              <img src="/img/burger-examples/burger-example-6-compressed.jpg" alt="" />
+              <div class="price">560₴</div>
+              <div class="description">Итальянский</div>
+              <div class="weight">510г</div>
+              <button>Добавить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="sections">
+          <div class="logo">
+            <img src="/img/your-meal-footer.svg" />
+            <img src="/img/kitchen-footer.svg" />
+          </div>
+          <div class="phone">
+            <div class="label">Номер для заказа</div>
+            <div class="value">
+              <img src="/img/call.svg" />
+              <span>+3 (098) 233-94-73</span>
+            </div>
+          </div>
+          <div class="social-media">
+            <div class="label">Мы в соцсетях</div>
+            <div>
+              <img src="/img/vk.svg" />
+              <img src="/img/telegram.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="copyright">© YouMeal, 2022</div>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<!-- loading of pics -->
+<!-- scroll for categories -->
+<!-- text props reuse -->
+<!-- ellipsis header -->
+
+<!-- deploy -->
+<!-- check with AI for recommendations -->
+<!-- use git -->
+ <!-- favicon -->
