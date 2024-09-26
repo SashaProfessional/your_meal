@@ -68,9 +68,9 @@
       </div>
     </header>
 
-    <main class=" d-none">
+    <main>
       <div class="categories">
-        <span><img src="/img/burger.svg" /> Бургеры</span>
+        <span class="active"><img src="/img/burger.svg" /> Бургеры</span>
         <span><img src="/img/snacks.svg" /> Закуски</span>
         <span><img src="/img/hot-dog.svg" /> Хот-доги</span>
         <span><img src="/img/combo.svg" /> Комбо</span>
@@ -84,69 +84,71 @@
 
       <!-- maybe use заголовок -->
       <div class="main-section">
-        <div class="cart">
+        <div class="cart closed">
           <div class="top-section">
             <span class="title">Корзина</span>
             <span class="quantity">4</span>
           </div>
-          <div class="items-section">
-            <div class="item">
-              <image
-                src="/img/burger-examples/burger-example-2-compressed.jpg"
-              />
-              <div class="description">
-                <div class="name">Супер сырный</div>
-                <div class="weight">512г</div>
-                <div class="price">550₴</div>
+          <div class="closable-section">
+            <div class="items-section">
+              <div class="item">
+                <image
+                  src="/img/burger-examples/burger-example-2-compressed.jpg"
+                />
+                <div class="description">
+                  <div class="name">Супер сырный</div>
+                  <div class="weight">512г</div>
+                  <div class="price">550₴</div>
+                </div>
+                <div class="counter">
+                  <span class="control">-</span>
+                  <span class="quantity">1</span>
+                  <span class="control">+</span>
+                </div>
               </div>
-              <div class="counter">
-                <span class="control">-</span>
-                <span class="quantity">1</span>
-                <span class="control">+</span>
+              <div class="item">
+                <image src="/img/fries-compressed.jpg" />
+                <div class="description">
+                  <div class="name">Картошка фри</div>
+                  <div class="weight">180г</div>
+                  <div class="price">245₴</div>
+                </div>
+                <div class="counter">
+                  <span class="control">-</span>
+                  <span class="quantity">2</span>
+                  <span class="control">+</span>
+                </div>
+              </div>
+              <div class="item">
+                <image src="/img/hot-dog-cart-compressed.jpg" />
+                <div class="description">
+                  <div class="name">Жгучий хот-дог</div>
+                  <div class="weight">245г</div>
+                  <div class="price">239₴</div>
+                </div>
+                <div class="counter">
+                  <span class="control">-</span>
+                  <span class="quantity">1</span>
+                  <span class="control">+</span>
+                </div>
               </div>
             </div>
-            <div class="item">
-              <image src="/img/fries-compressed.jpg" />
-              <div class="description">
-                <div class="name">Картошка фри</div>
-                <div class="weight">180г</div>
-                <div class="price">245₴</div>
-              </div>
-              <div class="counter">
-                <span class="control">-</span>
-                <span class="quantity">2</span>
-                <span class="control">+</span>
-              </div>
+
+            <div class="summary-section">
+              <span>Итого</span>
+              <span>1279₴</span>
             </div>
-            <div class="item">
-              <image src="/img/hot-dog-cart-compressed.jpg" />
-              <div class="description">
-                <div class="name">Жгучий хот-дог</div>
-                <div class="weight">245г</div>
-                <div class="price">239₴</div>
-              </div>
-              <div class="counter">
-                <span class="control">-</span>
-                <span class="quantity">1</span>
-                <span class="control">+</span>
-              </div>
+
+            <button class="make-order">Оформить заказ</button>
+
+            <div class="free-delivery-section">
+              <img src="/img/delivery.svg" />
+              <span>Бесплатная доставка</span>
             </div>
-          </div>
-
-          <div class="summary-section">
-            <span>Итого</span>
-            <span>1279₴</span>
-          </div>
-
-          <button class="make-order">Оформить заказ</button>
-
-          <div class="free-delivery-section">
-            <img src="/img/delivery.svg" />
-            Бесплатная доставка
           </div>
         </div>
 
-        <div class="not-cart">
+        <div class="not-cart d-none">
           <div class="active-category-title">Бургеры</div>
           <div class="food-cards">
             <div class="food-card">
@@ -212,30 +214,35 @@
           </div>
         </div>
       </div>
+    </main>
 
-      <footer>
-        <div class="sections">
-          <svg class="logo" viewBox="0 0 151 29" role="img"  preserveAspectRatio="xMinYMin meet">
-            <use href="img/sprite.svg#logo" />
-          </svg>
-          <div class="phone">
-            <div class="label">Номер для заказа</div>
-            <div class="value">
-              <img src="/img/call.svg" />
-              <span>+3 (098) 233-94-73</span>
-            </div>
-          </div>
-          <div class="social-media">
-            <div class="label">Мы в соцсетях</div>
-            <div>
-              <img src="/img/vk.svg" />
-              <img src="/img/telegram.svg" />
-            </div>
+    <footer class="d-none">
+      <div class="sections">
+        <svg
+          class="logo"
+          viewBox="0 0 151 29"
+          role="img"
+          preserveAspectRatio="xMinYMin meet"
+        >
+          <use href="img/sprite.svg#logo" />
+        </svg>
+        <div class="phone">
+          <div class="label">Номер для заказа</div>
+          <div class="value">
+            <img src="/img/call.svg" />
+            <span>+3 (098) 233-94-73</span>
           </div>
         </div>
-        <div class="copyright">© YouMeal, 2022</div>
-      </footer>
-    </main>
+        <div class="social-media">
+          <div class="label">Мы в соцсетях</div>
+          <div>
+            <img src="/img/vk.svg" />
+            <img src="/img/telegram.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© YouMeal, 2022</div>
+    </footer>
   </body>
 </html>
 
