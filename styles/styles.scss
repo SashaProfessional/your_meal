@@ -7,6 +7,10 @@ $white_f9: #f9f9f9;
 $grey_b1: #b1b1b1;
 $grey_f2: #f2f2f3;
 
+.d-none {
+  display: none;
+}
+
 @mixin text1 {
   font-size: 12px;
   font-weight: 400;
@@ -14,7 +18,7 @@ $grey_f2: #f2f2f3;
   text-align: left;
 }
 
-@mixin text2 {  
+@mixin text2 {
   font-size: 16px;
   font-weight: 400;
 }
@@ -25,49 +29,101 @@ body {
 
   header {
     background-image: url("data:image/svg+xml,%3Csvg id='header' width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg' %3E%3Ccircle cx='100' cy='100' r='100' fill='%23FFAB08' /%3E%3C/svg%3E");
-    background-size: 1440px 1440px;
+    background-size: 610px 610px;
     background-position: bottom;
     background-repeat: no-repeat;
+
+    padding-bottom: 30px;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding-top: 24px;
-    padding-bottom: 70px;
+    @media (min-width: 500px) {
+      background-size: 1000px 1000px;
+      padding-bottom: 44px;
+    }
 
-    .logo{
+    @media (min-width: 768px) {
+      background-size: 2540px 2540px;
+      padding-bottom: 44px;
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 63px;
+    }
+
+    .logo {
       width: 150px;
       height: 30px;
       color: $white_ff;
+      margin: 24px 0;
     }
 
     .not-logo {
       display: flex;
+      flex-direction: column-reverse;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+
+      img {
+        width: 230px;
+        height: 230px;
+
+        @media (min-width: 1024px) {
+          width: 326px;
+          height: 326px;
+        }
+      }
 
       .info {
-        display: flex;
-        flex-direction: column;
-        padding: 46px 0;
-        justify-content: space-between;
+        @media (min-width: 768px) {
+          margin-top: 27px;
+          text-align: left;
+        }
 
         .creed {
-          div {
-            font-size: 50px;
-            font-weight: 800;
-            line-height: 60px;
-            text-align: left;
+          font-weight: 800;
+          font-size: 30px;
+          line-height: 36px;
 
-            &:first-child {
-              color: $white_ff;
-            }
-            &:last-child {
-              color: $orange_ff7;
-            }
+          @media (min-width: 768px) {
+            font-size: 36px;
+            line-height: 43px;
+          }
+
+          @media (min-width: 1024px) {
+            font-size: 50px;
+            line-height: 60px;
+          }
+
+          &.creed1 {
+            color: $white_ff;
+          }
+          &.creed2 {
+            color: $orange_ff7;
           }
         }
         .discount {
           color: $white_ff;
+          font-size: 12px;
+          line-height: 16px;
+
+          margin-top: 16px;
+          margin-bottom: 19px;
+
+          @media (min-width: 768px) {
+            margin-top: 26px;
+          }
+
+          @media (min-width: 1024px) {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 52px;
+          }
         }
       }
     }
@@ -203,8 +259,8 @@ body {
           justify-content: space-between;
         }
         .make-order {
-        @include text2;
-        
+          @include text2;
+
           background-color: $orange_ff7;
           color: $white_ff;
           border: none;
@@ -252,7 +308,7 @@ body {
             }
             .description {
               @include text2;
-              
+
               line-height: 22px;
               text-align: left;
             }

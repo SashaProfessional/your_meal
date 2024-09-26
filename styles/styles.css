@@ -1,46 +1,111 @@
+.d-none {
+  display: none;
+}
+
 body {
   margin: 0;
   background-color: #f9f9f9;
 }
 body header {
   background-image: url("data:image/svg+xml,%3Csvg id='header' width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg' %3E%3Ccircle cx='100' cy='100' r='100' fill='%23FFAB08' /%3E%3C/svg%3E");
-  background-size: 1440px 1440px;
+  background-size: 610px 610px;
   background-position: bottom;
   background-repeat: no-repeat;
+  padding-bottom: 30px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 70px;
+}
+@media (min-width: 500px) {
+  body header {
+    background-size: 1000px 1000px;
+    padding-bottom: 44px;
+  }
+}
+@media (min-width: 768px) {
+  body header {
+    background-size: 2540px 2540px;
+    padding-bottom: 44px;
+  }
+}
+@media (min-width: 1024px) {
+  body header {
+    padding-bottom: 63px;
+  }
 }
 body header .logo {
   width: 150px;
   height: 30px;
   color: #ffffff;
+  margin: 24px 0;
 }
 body header .not-logo {
   display: flex;
+  flex-direction: column-reverse;
 }
-body header .not-logo .info {
-  display: flex;
-  flex-direction: column;
-  padding: 46px 0;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  body header .not-logo {
+    flex-direction: row;
+  }
 }
-body header .not-logo .info .creed div {
-  font-size: 50px;
+body header .not-logo img {
+  width: 230px;
+  height: 230px;
+}
+@media (min-width: 1024px) {
+  body header .not-logo img {
+    width: 326px;
+    height: 326px;
+  }
+}
+@media (min-width: 768px) {
+  body header .not-logo .info {
+    margin-top: 27px;
+    text-align: left;
+  }
+}
+body header .not-logo .info .creed {
   font-weight: 800;
-  line-height: 60px;
-  text-align: left;
+  font-size: 30px;
+  line-height: 36px;
 }
-body header .not-logo .info .creed div:first-child {
+@media (min-width: 768px) {
+  body header .not-logo .info .creed {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+@media (min-width: 1024px) {
+  body header .not-logo .info .creed {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+body header .not-logo .info .creed.creed1 {
   color: #ffffff;
 }
-body header .not-logo .info .creed div:last-child {
+body header .not-logo .info .creed.creed2 {
   color: #ff7020;
 }
 body header .not-logo .info .discount {
   color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 16px;
+  margin-bottom: 19px;
+}
+@media (min-width: 768px) {
+  body header .not-logo .info .discount {
+    margin-top: 26px;
+  }
+}
+@media (min-width: 1024px) {
+  body header .not-logo .info .discount {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 52px;
+  }
 }
 body main .categories {
   display: flex;
