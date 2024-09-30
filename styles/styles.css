@@ -159,17 +159,25 @@ body main .categories span img {
   margin-right: 8px;
 }
 body main .active-category-title {
-  font-size: 40px;
+  font-size: 28px;
+  line-height: 34px;
   font-weight: 600;
-  line-height: 48px;
   text-align: left;
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  body main .active-category-title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
 }
 body main .main-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  margin: 0 10px 30px;
+  margin: 0 0 30px 10px;
 }
 @media (min-width: 768px) {
   body main .main-section {
@@ -178,18 +186,22 @@ body main .main-section {
 }
 @media (min-width: 1024px) {
   body main .main-section {
-    margin: 0 75px 100px;
+    margin: 0 0 100px 75px;
+    flex-direction: row;
   }
 }
 body main .main-section .cart {
-  width: 300px;
+  width: 280px;
   background-color: #ffffff;
   border-radius: 18px;
   padding: 16px 10px;
+  position: relative;
 }
 @media (min-width: 1024px) {
   body main .main-section .cart {
     padding: 16px;
+    width: 268px;
+    margin-top: 72px;
   }
 }
 body main .main-section .cart .top-section {
@@ -234,6 +246,24 @@ body main .main-section .cart .top-section .quantity {
   }
   body main .main-section .cart.closed .closable-section {
     display: none;
+  }
+}
+body main .main-section .cart .closable-section {
+  background-color: #ffffff;
+  width: 280px;
+  padding: 0 10px 16px;
+}
+@media (max-width: 1023px) {
+  body main .main-section .cart .closable-section {
+    position: absolute;
+    top: 48px;
+    left: 0;
+  }
+}
+@media (min-width: 1024px) {
+  body main .main-section .cart .closable-section {
+    padding: 0;
+    width: 268px;
   }
 }
 body main .main-section .cart .closable-section .items-section {
@@ -309,7 +339,7 @@ body main .main-section .cart .closable-section .summary-section {
 @media (min-width: 1024px) {
   body main .main-section .cart .closable-section .summary-section {
     font-size: 16px;
-    line-height: 121px;
+    line-height: 21px;
   }
 }
 body main .main-section .cart .closable-section .make-order {
@@ -352,44 +382,91 @@ body main .main-section .not-cart .food-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  body main .main-section .not-cart .food-cards {
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  body main .main-section .not-cart .food-cards {
+    gap: 30px;
+  }
 }
 body main .main-section .not-cart .food-cards .food-card {
-  padding: 12px;
+  padding: 4px;
   background-color: #ffffff;
   border-radius: 18px;
 }
+@media (min-width: 1024px) {
+  body main .main-section .not-cart .food-cards .food-card {
+    padding: 12px;
+  }
+}
 body main .main-section .not-cart .food-cards .food-card img {
-  width: 275px;
-  height: 220px;
+  width: 137px;
+  height: 120px;
+}
+@media (min-width: 1024px) {
+  body main .main-section .not-cart .food-cards .food-card img {
+    width: 275px;
+    height: 220px;
+  }
 }
 body main .main-section .not-cart .food-cards .food-card .price {
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 600;
-  line-height: 24px;
   text-align: left;
   margin: 16px 0 8px;
 }
+@media (min-width: 1024px) {
+  body main .main-section .not-cart .food-cards .food-card .price {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
 body main .main-section .not-cart .food-cards .food-card .description {
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 400;
-  line-height: 22px;
   text-align: left;
 }
+@media (min-width: 1024px) {
+  body main .main-section .not-cart .food-cards .food-card .description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 body main .main-section .not-cart .food-cards .food-card .weight {
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 600;
-  line-height: 22px;
   text-align: left;
   color: #b1b1b1;
   margin: 29px 0 8px;
 }
+@media (min-width: 1024px) {
+  body main .main-section .not-cart .food-cards .food-card .weight {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 body main .main-section .not-cart .food-cards .food-card button {
+  font-size: 12px;
+  line-height: 12px;
   background-color: #f2f2f3;
   border: none;
   border-radius: 12px;
   padding: 12px 0;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  body main .main-section .not-cart .food-cards .food-card button {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 body main .main-section .not-cart .food-cards .food-card button:hover {
   color: #ffffff;
