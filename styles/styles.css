@@ -29,7 +29,7 @@ body header {
     padding-bottom: 44px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body header {
     padding-bottom: 63px;
   }
@@ -53,7 +53,7 @@ body header .not-logo img {
   width: 230px;
   height: 230px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body header .not-logo img {
     width: 326px;
     height: 326px;
@@ -76,7 +76,7 @@ body header .not-logo .info .creed {
     line-height: 43px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body header .not-logo .info .creed {
     font-size: 50px;
     line-height: 60px;
@@ -100,7 +100,7 @@ body header .not-logo .info .discount {
     margin-top: 26px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body header .not-logo .info .discount {
     font-size: 16px;
     line-height: 22px;
@@ -122,7 +122,7 @@ body main .categories {
     margin: 30px 0 30px 64px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .categories {
     -moz-column-gap: 24px;
          column-gap: 24px;
@@ -141,7 +141,7 @@ body main .categories span {
   padding: 3px 8px;
   border-radius: 50px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .categories span {
     font-size: 16px;
     line-height: 22px;
@@ -165,7 +165,7 @@ body main .active-category-title {
   text-align: left;
   margin-bottom: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .active-category-title {
     font-size: 40px;
     line-height: 48px;
@@ -184,7 +184,7 @@ body main .main-section {
     margin: 0 0 30px 64px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section {
     margin: 0 0 100px 75px;
     flex-direction: row;
@@ -197,7 +197,7 @@ body main .main-section .cart {
   padding: 16px 10px;
   position: relative;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart {
     padding: 16px;
     width: 268px;
@@ -218,7 +218,7 @@ body main .main-section .cart .top-section .title {
   font-weight: 600;
   text-align: left;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .top-section .title {
     font-size: 24px;
     line-height: 24px;
@@ -232,14 +232,14 @@ body main .main-section .cart .top-section .quantity {
   font-size: 10px;
   line-height: 14px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .top-section .quantity {
     padding: 2px 16px;
     font-size: 12px;
     line-height: 17px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1047px) {
   body main .main-section .cart.closed .top-section {
     border-bottom: none;
     padding-bottom: 0;
@@ -253,14 +253,14 @@ body main .main-section .cart .closable-section {
   width: 280px;
   padding: 0 10px 16px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1047px) {
   body main .main-section .cart .closable-section {
     position: absolute;
     top: 48px;
     left: 0;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .closable-section {
     padding: 0;
     width: 268px;
@@ -277,7 +277,7 @@ body main .main-section .cart .closable-section .items-section .item {
   border-bottom: 1px solid #f2f2f3;
   padding: 12px 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .closable-section .items-section .item {
     padding: 16px 0;
   }
@@ -306,7 +306,7 @@ body main .main-section .cart .closable-section .items-section .item .counter {
   font-size: 12px;
   line-height: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .closable-section .items-section .item .counter {
     font-size: 16px;
     line-height: 22px;
@@ -318,7 +318,7 @@ body main .main-section .cart .closable-section .items-section .item .counter .c
   display: inline-block;
   border-radius: 12px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .closable-section .items-section .item .counter .control {
     padding: 9px 12px;
   }
@@ -336,7 +336,7 @@ body main .main-section .cart .closable-section .summary-section {
   font-size: 12px;
   line-height: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .closable-section .summary-section {
     font-size: 16px;
     line-height: 21px;
@@ -355,7 +355,7 @@ body main .main-section .cart .closable-section .make-order {
   width: 100%;
   border-radius: 12px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .closable-section .make-order {
     margin: 24px 0 8px;
     font-size: 16px;
@@ -369,7 +369,7 @@ body main .main-section .cart .closable-section .free-delivery-section span {
   font-size: 10px;
   line-height: 24px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .cart .closable-section .free-delivery-section span {
     font-size: 12px;
   }
@@ -389,7 +389,7 @@ body main .main-section .not-cart .food-cards {
     gap: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .not-cart .food-cards {
     gap: 30px;
   }
@@ -399,7 +399,7 @@ body main .main-section .not-cart .food-cards .food-card {
   background-color: #ffffff;
   border-radius: 18px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .not-cart .food-cards .food-card {
     padding: 12px;
   }
@@ -408,7 +408,7 @@ body main .main-section .not-cart .food-cards .food-card img {
   width: 137px;
   height: 120px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .not-cart .food-cards .food-card img {
     width: 275px;
     height: 220px;
@@ -421,7 +421,7 @@ body main .main-section .not-cart .food-cards .food-card .price {
   text-align: left;
   margin: 16px 0 8px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .not-cart .food-cards .food-card .price {
     font-size: 24px;
     line-height: 24px;
@@ -433,7 +433,7 @@ body main .main-section .not-cart .food-cards .food-card .description {
   font-weight: 400;
   text-align: left;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .not-cart .food-cards .food-card .description {
     font-size: 16px;
     line-height: 21px;
@@ -447,7 +447,7 @@ body main .main-section .not-cart .food-cards .food-card .weight {
   color: #b1b1b1;
   margin: 29px 0 8px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .not-cart .food-cards .food-card .weight {
     font-size: 16px;
     line-height: 21px;
@@ -462,7 +462,7 @@ body main .main-section .not-cart .food-cards .food-card button {
   padding: 12px 0;
   width: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
   body main .main-section .not-cart .food-cards .food-card button {
     font-size: 16px;
     line-height: 16px;
@@ -473,35 +473,119 @@ body main .main-section .not-cart .food-cards .food-card button:hover {
   background-color: #f86310;
 }
 body footer {
-  padding: 51px 211px 34px 75px;
   background-color: #ffffff;
+  padding: 24px 0 26px 10px;
+}
+@media (min-width: 768px) {
+  body footer {
+    padding: 40px 0 26px 64px;
+  }
+}
+@media (min-width: 1048px) {
+  body footer {
+    padding: 51px 21px 34px 75px;
+  }
 }
 body footer .sections {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
 }
-body footer .sections .logo {
+@media (min-width: 768px) {
+  body footer .sections {
+    flex-direction: row;
+  }
+}
+body footer .sections .logo-container {
   flex: 2;
-  width: 300px;
-  height: 60px;
+}
+@media (min-width: 768px) {
+  body footer .sections .logo-container {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 1048px) {
+  body footer .sections .logo-container {
+    flex-basis: unset;
+  }
+}
+body footer .sections .logo-container .logo {
   color: #ff7020;
+  width: 196px;
+  height: 38px;
+}
+@media (min-width: 768px) {
+  body footer .sections .logo-container .logo {
+    width: 300px;
+    height: 60px;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 1048px) {
+  body footer .sections .logo-container .logo {
+    margin-bottom: 0;
+  }
 }
 body footer .sections .phone {
   flex: 1;
+  white-space: nowrap;
 }
 body footer .sections .phone .label {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 18px;
+}
+@media (min-width: 1048px) {
+  body footer .sections .phone .label {
+    margin-bottom: 24px;
+  }
 }
 body footer .sections .phone .value {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (min-width: 1048px) {
+  body footer .sections .phone .value {
+    margin-bottom: 24px;
+  }
 }
 body footer .sections .social-media {
   flex: 1;
+  white-space: nowrap;
+}
+@media (min-width: 1048px) {
+  body footer .sections .social-media {
+    margin: 0 210px 0 126px;
+  }
 }
 body footer .sections .social-media .label {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 18px;
+}
+@media (min-width: 1048px) {
+  body footer .sections .social-media .label {
+    margin-bottom: 24px;
+  }
+}
+body footer .sections .social-media .icons img:first-child {
+  margin-right: 16px;
 }
 body footer .copyright {
-  margin-top: 44px;
+  margin-top: 34px;
+  font-size: 12px;
+  line-height: 17px;
+}
+@media (min-width: 768px) {
+  body footer .copyright {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1048px) {
+  body footer .copyright {
+    margin-bottom: 24px;
+  }
 }/*# sourceMappingURL=styles.css.map */
